@@ -40,6 +40,16 @@ public class Zone {
         this.animals = animals;
     }
 
+    /* Ajout d'un animal à la liste d'animaux de la classe */
+    public void appendAnimal(Animal animal) {
+        // Vérification de la capacité
+        if (animals.size() >= capacite) {
+            throw new IllegalStateException("La capacité maximale de la zone '" + nom + "' est atteinte !");
+        }
+        // Ajout de l'animal à la liste
+        animals.add(animal);
+    }
+
     @Override
     public String toString() {
         return "Zone{" +

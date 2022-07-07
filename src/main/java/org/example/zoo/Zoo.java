@@ -12,6 +12,22 @@ public class Zoo {
         this.zones = zones;
     }
 
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public List<Zone> getZones() {
+        return zones;
+    }
+
+    public void setZones(List<Zone> zones) {
+        this.zones = zones;
+    }
+
     @Override
     public String toString() {
         return "Zoo{" +

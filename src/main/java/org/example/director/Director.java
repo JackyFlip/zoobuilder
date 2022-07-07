@@ -2,7 +2,6 @@ package org.example.director;
 
 import org.example.builder.ZooBuilder;
 import org.example.zoo.Animal;
-import org.example.zoo.Zoo;
 
 public class Director {
 
@@ -27,21 +26,21 @@ public class Director {
         zooBuilder.appendZone(zoneSinge, capaciteSinge);
         zooBuilder.appendZone(zoneGirafe, capaciteGirafe);
 
-        zooBuilder.appendAnimal(zoneLion, lion);
-        zooBuilder.appendAnimal(zoneLion, lion);
-        zooBuilder.appendAnimal(zoneLion, lion);
+        zooBuilder.appendAnimalv2(zoneLion, lion);
+        zooBuilder.appendAnimalv2(zoneLion, lion);
+        zooBuilder.appendAnimalv2(zoneLion, lion);
 
-        zooBuilder.appendAnimal(zoneDauphin, dauphin);
-        zooBuilder.appendAnimal(zoneDauphin, dauphin);
-
-        zooBuilder.appendAnimal(zoneSinge, singe);
-        zooBuilder.appendAnimal(zoneSinge, singe);
-        zooBuilder.appendAnimal(zoneSinge, singe);
-        zooBuilder.appendAnimal(zoneSinge, singe);
-        zooBuilder.appendAnimal(zoneSinge, singe);
-
-        zooBuilder.appendAnimal(zoneGirafe, girafe);
-        zooBuilder.appendAnimal(zoneGirafe, girafe);
+//        zooBuilder.appendAnimalv2(zoneDauphin, dauphin);
+//        zooBuilder.appendAnimalv2(zoneDauphin, dauphin);
+//
+//        zooBuilder.appendAnimalv2(zoneSinge, singe);
+//        zooBuilder.appendAnimalv2(zoneSinge, singe);
+//        zooBuilder.appendAnimalv2(zoneSinge, singe);
+//        zooBuilder.appendAnimalv2(zoneSinge, singe);
+//        zooBuilder.appendAnimalv2(zoneSinge, singe);
+//
+//        zooBuilder.appendAnimalv2(zoneGirafe, girafe);
+//        zooBuilder.appendAnimalv2(zoneGirafe, girafe);
     }
 
 }
