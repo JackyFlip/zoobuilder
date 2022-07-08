@@ -25,18 +25,24 @@ public class ZooBuilder {
 
     /* Ajout d'un nouvel animal dans une zone donnée du zoo */
     public void appendAnimal(String nomZone, Animal animal) {
+        // Itération sur toute la liste de zones
         for (int i = 0; i < this.zones.size(); i++) {
 
             Zone zone = zones.get(i);
 
+            // Test si la zone à l'index actuel est la zone recherchée
             if(zone.getNom().equals(nomZone)) {
 
+                // Test si la capacité maximale n'est pas déjà atteinte
                 if(zone.getAnimals().size() >= zone.getCapacite()) {
                     throw new IllegalStateException("La capacité maximale de la zone est atteinte !");
                 }
 
+                // Récupération de la liste des animaux
                 List<Animal> animals = zone.getAnimals();
+                // Ajout d'un nouvel animal
                 animals.add(animal);
+                // Mise à jour de la liste d'animaux
                 zone.setAnimals(animals);
 
                 break;
